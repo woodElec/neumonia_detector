@@ -31,7 +31,7 @@ def create_pdf(self):
         showinfo(title='PDF', message='El PDF fue generado con éxito.')
 
 def delete(self):
-        answer = askokcancel(title='Confirmación', message='Se borrarán todos los datos.', icon=WARNING)
+        answer = askokcancel(title='Confirmación', message='Se borrarán todos los datos', icon=WARNING)
         if answer:
             self.text1.delete(0, 'end')
             self.text2.delete(1.0, 'end')
